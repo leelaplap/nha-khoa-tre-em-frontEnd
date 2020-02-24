@@ -80,6 +80,11 @@
       margin-top: 130px;
   }
   
+  .thread-content__viewport .style-none {
+      background: none;
+      border: none;
+  }
+  
   #header {
       position: fixed;
       top: 0;
@@ -473,7 +478,7 @@
   }
   
   .patient-thread .product-item__content .product-item__thumbnail {
-      width: 40%;
+      width: 37%;
       padding: 0;
   }
   

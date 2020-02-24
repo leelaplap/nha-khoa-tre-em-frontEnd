@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -278,36 +278,76 @@
 
                     <div class="thread-content">
                         <div class="thread-content__viewport">
-                            <ul class="slides">
-                                <li><img src="http://niengrangtreem.com/wp-content/uploads/2020/02/certificate.jpg" alt="Certificate"></li>
-                                <li><img src="http://niengrangtreem.com/wp-content/uploads/2020/02/certificate-1.jpg" alt="Certificate"></li>
-                                <li><img src="http://niengrangtreem.com/wp-content/uploads/2020/02/certificate-2.jpg" alt="Certificate"></li>
-                                <li><img src="http://niengrangtreem.com/wp-content/uploads/2020/02/certificate-3.jpg" alt="Certificate"></li>
-                            </ul>
-                        </div>
-                        <ul style="float:right;" class="direction-nav">
-                            <li><a href="#"><i class="fal fa-long-arrow-left"></i></a></li>
-                            <li><a href="#"><i class="fal fa-long-arrow-right"></i></a></li>
-                        </ul>
 
-                        <div class="clear"></div>
+                            <div id="carousel" class="flexslider style-none">
+                                <ul class="slides">
+                                    <li>
+                                        <img src="images/certificate1.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/certificate2.png" />
+                                    </li>
+
+                                    <li>
+                                        <img src="images/certificate1.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/certificate2.png" />
+                                    </li>
+
+                                    <li>
+                                        <img src="images/certificate1.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/certificate2.png" />
+                                    </li>
+
+                                    <li>
+                                        <img src="images/certificate1.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/certificate2.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="clear"></div>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
+    </div>
 
-        <footer id="footer">
-            <div class="container">
-                <h3>© <span>TUT</span> Inc. All Rights Reserved.</h3>
-            </div>
-        </footer>
+    <footer id="footer">
+        <div class="container">
+            <h3>© <span>TUT</span> Inc. All Rights Reserved.</h3>
+        </div>
+    </footer>
     </div>
 
     <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script defer src="js/jquery.flexslider.js"></script>
 
 
+
+    <script type="text/javascript">
+        $(window).on("load", function() {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 396,
+                itemMargin: 20,
+                asNavFor: '#slider'
+
+            });
+
+
+        });
+    </script>
 
     <!-- positionFixedNav -->
 
