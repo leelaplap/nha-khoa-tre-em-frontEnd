@@ -76,15 +76,25 @@
       clear: both;
   }
   
+  .margin_top_130px {
+      margin-top: 130px;
+  }
+  
   #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      padding: 0;
       background-color: transparent;
       box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, .15);
       transition: ease all .8s;
       z-index: 9999;
-      /* position: fixed;
-      top: 0;
-      left: 0;
-      right: 0; */
+  }
+  
+  #header.active {
+      background: #fff;
   }
   
   #header .header-logo {
@@ -121,6 +131,11 @@
   
   #header .navigation ul li a {
       padding: 5px;
+      font-weight: 600;
+  }
+  
+  #header .navigation ul li a:hover {
+      color: #00995d;
   }
   
   #header .navigation ul li a.active {
@@ -134,6 +149,16 @@
   
   #header .navigation ul .nav-contact a {
       color: #ffffff;
+  }
+  
+  #header .navigation ul .nav-contact:hover {
+      background: #00995d;
+      color: #fff;
+  }
+  
+  #header .navigation ul .nav-contact:hover a {
+      color: #fff;
+      text-decoration: none;
   }
   
   .intro {
@@ -561,7 +586,7 @@
   }
   
   .news-page {
-      padding: 100px 0;
+      padding: 100px 0 50px;
       box-sizing: border-box;
   }
   
@@ -574,7 +599,7 @@
       margin-bottom: 50px;
   }
   
-  .news-sidebar__thread .news-sidebar__title {
+  .news-sidebar__title {
       border-left: 12px solid #f59122;
       border-bottom: 2px solid #f59122;
       text-transform: uppercase;
@@ -665,6 +690,7 @@
   
   .news-sidebar__thread .news-sidebar__body .fb {
       border: 1px solid #c4cde0;
+      transition: all ease 1s;
   }
   
   .news-sidebar__thread .news-sidebar__body .fb i {
@@ -673,6 +699,7 @@
   
   .news-sidebar__thread .news-sidebar__body .youtube {
       border: 1px solid #f0bcbb;
+      transition: all ease 1s;
   }
   
   .news-sidebar__thread .news-sidebar__body .youtube i {
@@ -680,6 +707,7 @@
   }
   
   .news-sidebar__thread .news-sidebar__body .wifi {
+      transition: all ease 1s;
       border: 1px solid #dddddd;
   }
   
@@ -775,4 +803,374 @@
   
   .news-content__detail .news-content__detail--thread p {
       margin: 10px 0;
+  }
+  
+  .news-content__detail .news-content__detail--table {
+      margin-bottom: 40px;
+  }
+  
+  .news-content__detail .news-content__detail--table td {
+      border-bottom: 1px solid #5b5b5b;
+      border-left: 1px solid #5b5b5b;
+      padding: 20px;
+      font-size: 20px;
+  }
+  
+  .news-content .news-content__tag {
+      margin: 0 0 30px 0;
+      font-size: 16px;
+  }
+  
+  .news-content .news-content__tag span {
+      margin: 0 0 30px 0;
+      color: #f59122;
+      font-style: italic;
+  }
+  
+  .news-content .news-content__share ul li {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 15px 30px;
+      border-radius: 5px;
+  }
+  
+  .news-content .news-content__share {
+      padding: 30px 0;
+  }
+  
+  .news-content .news-content__share ul li span::before {
+      content: "|";
+      margin: 0 10px;
+  }
+  
+  .news-content .news-content__share ul a {
+      color: white;
+  }
+  
+  .news-content .news-content__share ul .fb {
+      transition: all ease 1s;
+      background: #516eab;
+      border: 1px solid #516eab;
+  }
+  
+  .news-content .news-content__share ul .twitter {
+      transition: all ease 1s;
+      background: #29c5f6;
+      border: 1px solid #29c5f6;
+  }
+  
+  .news-content .news-content__share ul .printerest {
+      transition: all ease 1s;
+      background: #ca212a;
+      border: 1px solid #ca212a;
+  }
+  
+  .news-content .news-content__share ul a:hover li {
+      background: white;
+  }
+  
+  .news-content .news-content__share ul a:hover .fb {
+      color: #516eab;
+  }
+  
+  .news-content .news-content__share ul a:hover .twitter {
+      color: #29c5f6;
+  }
+  
+  .news-content .news-content__share ul a:hover .printerest {
+      color: #ca212a;
+  }
+  
+  .news-content__change-page a:hover {
+      color: #f59122;
+  }
+  
+  .news-content__change-page {
+      padding: 30px 60px;
+  }
+  
+  .news-content__change-page .prev-page {
+      float: left;
+      width: 25%;
+  }
+  
+  .news-content__change-page .next-page {
+      width: 25%;
+      float: right;
+  }
+  
+  .news-content__change-page h6 {
+      font-size: 14px;
+      color: #666666;
+  }
+  
+  .news-content__change-page h3 {
+      font-size: 20px;
+      position: relative;
+      margin-top: -30px;
+  }
+  
+  .news-content__change-page .prev-page i {
+      position: absolute;
+      top: 40px;
+      font-size: 30px;
+      left: -60px;
+  }
+  
+  .news-content__change-page .next-page i {
+      position: absolute;
+      top: 40px;
+      font-size: 30px;
+      right: -60px;
+  }
+  
+  .news-content__related-posts {
+      margin: 10px 0 50px;
+  }
+  
+  .news-content__related-posts--slide {
+      margin-bottom: 20px;
+  }
+  
+  .news-content__related-posts--slide .col {
+      float: left;
+      width: 30%;
+      margin: 14px;
+  }
+  
+  .news-content__related-posts--slide .col h6 {
+      color: #f59122;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 10px 0;
+      text-transform: capitalize;
+  }
+  
+  .news-content__related-posts--slide .col h6 span::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: #f59122;
+      margin: 0 5px 0 11px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+  }
+  
+  .news-content__related-posts--slide a:hover {
+      text-decoration: underline;
+      color: #f59122;
+  }
+  
+  .related-posts--button span {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      background: #fff;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      transition: all ease .8s;
+  }
+  
+  .related-posts--button span:hover {
+      background: black;
+  }
+  
+  .related-posts--button span:hover.prev-btn::after,
+  .related-posts--button span:hover.next-btn::after {
+      border-color: white;
+  }
+  
+  .related-posts--button .prev-btn::after {
+      content: "";
+      height: 7px;
+      position: absolute;
+      top: 8px;
+      transform: rotate(135deg);
+      left: 10px;
+      width: 7px;
+      border: solid #b2b2b2;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+  }
+  
+  .related-posts--button .next-btn::after {
+      content: "";
+      height: 7px;
+      position: absolute;
+      top: 8px;
+      transform: rotate(-45deg);
+      left: 7px;
+      width: 7px;
+      border: solid #b2b2b2;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+  }
+  
+  .list-comment .comment-first__avatar {
+      width: 10%;
+      float: left;
+  }
+  
+  .list-comment .comment-first__intro {
+      width: 70%;
+      float: left;
+      margin-left: 30px;
+  }
+  
+  .list-comment .comment-first__intro .comment-first__intro--name .name {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+  }
+  
+  .list-comment .comment-first__intro .comment-first__intro--name time {
+      font-size: 14px;
+      color: #888888;
+      margin-left: 20px;
+  }
+  
+  .list-comment .comment-first__intro .comment-first__intro--status p {
+      font-size: 16px;
+      color: #444444;
+  }
+  
+  .list-comment .comment-first__intro .comment-first__intro--reply a {
+      font-size: 16px;
+      color: #888888;
+  }
+  
+  .my-comment__write-comment textarea {
+      width: 100%;
+      border: none;
+      height: 300px;
+  }
+  
+  .my-comment__write-name {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+  
+  .my-comment__write-name label {
+      font-size: 16px;
+      width: 50%;
+  }
+  
+  .my-comment__write-name label::after {
+      content: "*";
+      display: inline-block;
+      color: red;
+      margin-left: 5px;
+  }
+  
+  .my-comment__check-for-save label {
+      font-size: 16px;
+      color: #666666;
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .my-comment__check-for-save .check-to-save {
+      height: 25px;
+      width: 25px;
+      background: #dcdbda;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px;
+      transition: all ease .8s;
+  }
+  
+  .my-comment__check-for-save .check-to-save::after {
+      content: "";
+      width: 5px;
+      height: 12px;
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      position: absolute;
+      top: 3px;
+      left: 9px;
+      display: none;
+      transform: rotate(45deg);
+  }
+  
+  .my-comment__check-for-save input:checked~span.check-to-save {
+      background: #f59122;
+  }
+  
+  .my-comment__check-for-save input:checked~span.check-to-save::after {
+      display: block;
+  }
+  
+  .my-comment a {
+      text-transform: uppercase;
+      transition: all ease .8s;
+      background: #f59122;
+      color: white;
+      padding: 17px 50px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid #f59122;
+      font-weight: 600;
+  }
+  
+  .my-comment a:hover {
+      background: #ffffff;
+      color: #f59122
+  }
+  
+  .blogs-page .blogs-page__title {
+      text-align: center;
+      margin-top: 50px;
+      text-transform: capitalize;
+  }
+  
+  .blogs-page .blogs-page__title h1 {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 32px;
+  }
+  
+  .blogs-page nav.blogs-page__navigation {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  
+  .blogs-page nav.blogs-page__navigation ul li {
+      display: inline-block;
+      padding: 0 30px;
+      box-sizing: border-box;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  
+  .blogs-page nav.blogs-page__navigation ul li a:hover {
+      color: #f59122;
+      transition: all ease .4s;
+  }
+  
+  nav.pagination {
+      margin: 60px 0;
+  }
+  
+  .pagination ul li {
+      display: inline-block;
+      padding: 3px 10px;
+      font-size: 20px;
+      background: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all ease .8s;
+  }
+  
+  .pagination ul li:hover {
+      background: #222222;
+      color: #fff;
+  }
+  
+  .pagination ul li:hover a {
+      color: #fff;
   }

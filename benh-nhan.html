@@ -18,16 +18,16 @@
         <header id="header">
             <div class="container">
                 <div class="header-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a href="home.html"><img src="images/logo.png" alt="logo"></a>
                 </div>
                 <div class="header-phone">
                     <a href="#"><img src="images/contact.png" alt="phone"></a>
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="index.html">trang chủ</a></li>
+                        <li><a href="home.html">trang chủ</a></li>
                         <li><a href="benh-nhan.html" class="active">bệnh nhân</a></li>
-                        <li><a href="tin-tuc.html">tin tức</a></li>
+                        <li><a href="blogs.html">tin tức</a></li>
                         <li><a href="#"><i class="far fa-search"></i></a></li>
                         <li class="nav-contact">
                             <a href="#"> <img src="images/contact-icon.png" style="width: 20%;" alt=""> liên hệ</a>
@@ -43,7 +43,7 @@
         <div id="body-content">
 
             <div class="container">
-                <div class="patient">
+                <div class="patient margin_top_130px">
                     <div class="patient-title">
                         <h1>Bệnh Nhân</h1>
                     </div>
@@ -459,9 +459,26 @@
     <!-- jQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
+    <!-- positionFixedNav -->
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(event) {
+                var pos_body = $('html,body').scrollTop();
+                if (pos_body > 25) {
+                    $("#header").addClass('active');
+                } else {
+                    $("#header").removeClass("active");
+                }
+
+            })
+        })
+    </script>
+
+
 
     <!-- FlexSlider -->
     <script defer src="js/jquery.flexslider.js"></script>
+
 
     <script type="text/javascript">
         $(window).load(function() {
