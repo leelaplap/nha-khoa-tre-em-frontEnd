@@ -32,6 +32,7 @@
   
   img {
       width: 100%;
+      border: none;
   }
   
   ul {
@@ -103,13 +104,16 @@
   }
   
   #header .header-logo {
-      width: 200px;
       float: left;
       padding-right: 20px;
   }
   
+  #header .header-logo .logo-tini {
+      width: 70px;
+      display: none;
+  }
+  
   #header .header-phone {
-      width: 200px;
       float: left;
       padding-left: 20px;
       border-left: 1px solid #e6f4ec;
@@ -117,6 +121,10 @@
   
   #header .header-phone img {
       padding-top: 20px;
+  }
+  
+  #header .navigation-tini {
+      display: none;
   }
   
   #header .navigation {
@@ -147,13 +155,15 @@
       border-bottom: 2px solid #f59122;
   }
   
-  #header .navigation ul .nav-contact {
-      background: #f59122;
-      border-radius: 6px;
-  }
-  
   #header .navigation ul .nav-contact a {
       color: #ffffff;
+      padding: 11px;
+      background: #f59122;
+      border-radius: 5px;
+  }
+  
+  #header .navigation ul .nav-contact a img {
+      width: 20%;
   }
   
   #header .navigation ul .nav-contact:hover {
@@ -164,6 +174,23 @@
   #header .navigation ul .nav-contact:hover a {
       color: #fff;
       text-decoration: none;
+  }
+  
+  @media screen and (max-width:1024px) {
+      #header .header-logo,
+      #header .header-phone {
+          width: 150px;
+      }
+      #header .header-phone img {
+          padding-top: 17px;
+      }
+      #header .navigation ul {
+          padding-top: 12px;
+      }
+      #header .navigation ul li {
+          padding: 10px;
+          font-size: 11px;
+      }
   }
   
   .intro {
@@ -201,6 +228,7 @@
   
   .intro .intro-content a {
       font-size: 20px;
+      border-radius: 5px;
       text-transform: uppercase;
       background: #f59122;
       color: #ffffff;
@@ -289,7 +317,7 @@
   }
   
   .feedback .feedback-content .col-footer {
-      margin: 75px 0 50px;
+      margin: 100px 0 50px;
   }
   
   .feedback .feedback-content .col-footer a {
@@ -1112,7 +1140,7 @@
   
   .my-comment a {
       text-transform: uppercase;
-      transition: all ease .8s;
+      transition: all ease .4s;
       background: #f59122;
       color: white;
       padding: 17px 50px;
@@ -1123,8 +1151,8 @@
   }
   
   .my-comment a:hover {
-      background: #ffffff;
-      color: #f59122
+      background: #00995d;
+      color: #fff;
   }
   
   .blogs-page .blogs-page__title {
@@ -1178,4 +1206,336 @@
   
   .pagination ul li:hover a {
       color: #fff;
+  }
+  
+  @media screen and (max-width:1024px) {
+      .intro .intro-content {
+          top: 30px;
+          padding: 0;
+      }
+      .feedback {
+          margin-top: -100px;
+      }
+      .feedback .feedback-content .col--30 {
+          margin: 16px;
+      }
+      .news-content .news-content__share ul li {
+          margin-right: 18px;
+      }
+      .news-content__change-page .prev-page {
+          width: 35%;
+      }
+      .news-content__change-page .next-page {
+          width: 35%;
+      }
+      .news-content__related-posts--slide .col {
+          margin: 11px;
+      }
+  }
+  
+  @media screen and (max-width:768px) {
+      .margin_top_130px {
+          margin-top: 70px;
+      }
+      #header .header-logo,
+      #header .header-phone {
+          width: 110px;
+      }
+      #header .navigation ul li {
+          padding: 7px;
+          font-size: 9px;
+      }
+      #header .navigation ul {
+          padding-top: 10px;
+      }
+      .intro .intro-content h1 {
+          font-size: 24px;
+      }
+      .intro .intro-content p {
+          font-size: 16px;
+          margin-bottom: 30px;
+      }
+      .intro .intro-content .text-small {
+          font-size: 13px;
+      }
+      .intro .intro-content a {
+          font-size: 14px;
+      }
+      .feedback .feedback-content .col--30 {
+          margin: 12px;
+      }
+      .feedback .feedback-content .col--30 {
+          margin: 12px;
+      }
+      .feedback .feedback-content .col--30 .col-content {
+          padding: 0 15px;
+      }
+      .feedback .feedback-content .col--30 .col-content__header .infor-customer {
+          margin-left: 12px;
+      }
+      .feedback .feedback-content .infor-customer h3 {
+          font-size: 16px;
+          margin-bottom: 5px;
+      }
+      .feedback .feedback-content .infor-customer h5 {
+          font-size: 12px;
+      }
+      .star {
+          font-size: 14px;
+      }
+      .feedback .feedback-content .col--30 .col-content p {
+          font-size: 16px;
+      }
+      .feedback .feedback-content .col-footer {
+          margin: 50px 0 35px;
+      }
+      .certificate-container {
+          padding: 70px 0 10px;
+      }
+      .patient .patient-title {
+          margin: 30px 0;
+      }
+      .patient .patient-title h1 {
+          font-size: 32px;
+      }
+      .patient .button-group {
+          padding: 40px 20px 8px;
+      }
+      .patient .button-group label {
+          font-size: 18px;
+      }
+      .patient-thread .product-item__intro--icons {
+          padding: 20px 0 0;
+      }
+      .patient-thread .product-item__intro--icons a {
+          height: 50px;
+          width: 50px;
+          margin: 0 7px;
+      }
+      .patient-thread .product-item__intro--table b,
+      .patient-thread .product-item__intro--table span {
+          font-size: 16px;
+          padding: 10px 20px;
+      }
+      .patient-thread .product-item__intro--note p {
+          font-size: 16px;
+      }
+      .blogs-page .blogs-page__title h1 {
+          font-size: 32px;
+          margin-bottom: 20px;
+      }
+      .blogs-page nav.blogs-page__navigation ul li {
+          padding: 0 20px;
+          font-size: 16px;
+      }
+      .news-content__related-posts--slide .col h6 {
+          font-size: 12px;
+      }
+      .news-content__related-posts--slide .col h3 {
+          font-size: 15px;
+          margin-bottom: 5px;
+      }
+      .news-content__related-posts--slide .col time {
+          font-size: 12px;
+      }
+      .pagination ul li {
+          font-size: 16px;
+      }
+      nav.pagination {
+          margin: 30px 0 15px;
+      }
+      .news-page {
+          padding: 30px 0 50px;
+      }
+      .news-content .news-content__title h1 {
+          font-size: 32px;
+          letter-spacing: 1.9px;
+          line-height: 35px;
+      }
+      .news-content .news-content__title h6 {
+          font-size: 10px;
+          margin: 30px 0;
+      }
+      .news-content__detail p {
+          font-size: 14px;
+          margin: 10px 0;
+      }
+      .news-content__detail .news-content__detail--intro .news-content__detail-intro--small p {
+          font-size: 16px;
+      }
+      .news-content__detail .news-content__detail--thread h4 {
+          font-size: 16px;
+      }
+      .news-content__detail .news-content__detail--thread {
+          margin: 20px 0;
+      }
+      .news-content__detail .news-content__detail--table td {
+          padding: 13px;
+          font-size: 16px;
+      }
+      .news-content__detail .news-content__detail--table td.stt {
+          text-align: center;
+      }
+      .news-content .news-content__tag {
+          font-size: 14px;
+      }
+      .news-content .news-content__share ul li {
+          margin-right: 10px;
+          font-size: 14px;
+      }
+      .news-content .news-content__share ul li {
+          padding: 8px 15px;
+      }
+      .news-content__change-page h3 {
+          font-size: 16px;
+      }
+      .news-content__change-page .prev-page,
+      .news-content__change-page .next-page {
+          width: 41%;
+      }
+      .news-content__change-page .prev-page i,
+      .news-content__change-page .next-page i {
+          top: 25px;
+      }
+      .news-content__related-posts--slide .col {
+          margin: 8px;
+      }
+      .news-content__related-posts--slide .col h6 {
+          font-size: 10px;
+      }
+      .news-content__related-posts--slide .col h3 {
+          font-size: 13px;
+      }
+      .my-comment a {
+          padding: 10px 40px;
+          font-size: 14px;
+      }
+      .my-comment__write-comment textarea {
+          height: 100px;
+      }
+      .news-sidebar__title {
+          font-size: 14px;
+          padding-left: 10px;
+          margin-bottom: 15px;
+      }
+      .news-sidebar__thread .news-sidebar__topic h4 {
+          font-size: 13px;
+          line-height: 16px;
+          margin-bottom: 0px;
+      }
+      .news-sidebar__thread .viewmore-topic {
+          font-size: 14px;
+      }
+      .news-sidebar__thread .news-sidebar__body ul li a h4 {
+          font-size: 14px;
+      }
+      .news-sidebar__thread .news-sidebar__body .social-icon {
+          padding: 10px 0;
+          width: 30%;
+          margin: 0 2px;
+      }
+      #footer h3 {
+          font-size: 14px;
+          margin: 0;
+      }
+  }
+  
+  @media screen and (max-width:425px) {
+      #header .header-logo .big-logo {
+          display: none;
+      }
+      #header .header-logo .logo-tini {
+          display: block;
+      }
+      #header .navigation-tini {
+          display: block;
+          padding-top: 5px;
+          text-align: right;
+          font-size: 30px;
+      }
+      #header #nav-tini {
+          background: transparent;
+          border: none;
+          font-size: 25px;
+      }
+      #header .navigation {
+          display: none;
+          float: none;
+          position: absolute;
+          background: white;
+          width: 50%;
+          right: 0;
+          box-shadow: 6px 8px 16px #f3f3f3;
+      }
+      #header .navigation ul li {
+          padding: 10px;
+          font-size: 9px;
+          float: none;
+          text-align: center;
+          display: block;
+      }
+      #header .navigation ul .nav-contact a img {
+          width: 4%;
+      }
+      #header .navigation ul {
+          padding-top: 0;
+          padding-bottom: 10px;
+      }
+      .intro {
+          top: -5px;
+      }
+      .intro .intro-content {
+          width: 57%;
+          position: absolute;
+          margin-left: 20px;
+      }
+      .intro .intro-content h6 {
+          font-size: 10px;
+          margin-bottom: 10px;
+      }
+      .intro .intro-content h1 {
+          font-size: 16px;
+          margin-bottom: 5px;
+      }
+      .intro .intro-content p {
+          font-size: 12px;
+          margin-bottom: 10px;
+      }
+      .intro .intro-content .text-small {
+          font-size: 9px;
+      }
+      .intro .intro-content a {
+          font-size: 9px;
+          padding: 6px 20px;
+      }
+      .feedback .feedback-content .col--30 .col-content__header {
+          margin: 15px 0;
+      }
+      .feedback .feedback-content .col--30 {
+          width: 45%;
+          margin: 9px;
+      }
+      .feedback .feedback-content .infor-customer h3 {
+          font-size: 12px;
+          margin-bottom: 3px;
+      }
+      .feedback .feedback-content .infor-customer h5 {
+          font-size: 10px;
+          margin-bottom: 2px;
+      }
+      .star {
+          font-size: 10px;
+      }
+      .feedback .feedback-content .col--30 .col-content p {
+          font-size: 12px;
+      }
+      .feedback .feedback-content .col-footer a {
+          font-size: 14px;
+      }
+      .certificate-container .thread-title {
+          width: 100%;
+      }
+      .certificate-container .thread-content {
+          width: 100%;
+      }
   }

@@ -18,11 +18,15 @@
         <header id="header">
             <div class="container">
                 <div class="header-logo">
-                    <a href="home.html"><img src="images/logo.png" alt="logo"></a>
+                    <a href="home.html"><img src="images/logo.png" alt="logo" class="big-logo"></a>
+                    <a href="home.html"><img src="images/tini-logo.png" alt="logo tini" class="logo-tini"></a>
                 </div>
                 <div class="header-phone">
-                    <a href="#"> <img src="images/contact.png" alt="phone"></a>
+                    <img src="images/contact.png" alt="phone"></a>
                 </div>
+                <nav class="navigation-tini">
+                    <button href="#" id="nav-tini"><i class="far fa-bars"></i></button>
+                </nav>
                 <nav class="navigation">
                     <ul>
                         <li><a href="home.html" class="active">trang chủ</a></li>
@@ -30,7 +34,7 @@
                         <li><a href="blogs.html">tin tức</a></li>
                         <li><a href="#"><i class="far fa-search"></i></a></li>
                         <li class="nav-contact">
-                            <a href="#"> <img src="images/contact-icon.png" style="width: 20%;" alt=""> liên hệ</a>
+                            <a href="#"> <img src="images/contact-icon.png" alt=""> liên hệ</a>
                         </li>
                     </ul>
                 </nav>
@@ -332,6 +336,17 @@
 
 
 
+    <!-- nav-tini -->
+    <script>
+        $(document).ready(function() {
+            $("#nav-tini").on("click", function() {
+                $(".navigation").slideToggle();
+
+            })
+
+        })
+    </script>
+
     <script type="text/javascript">
         $(window).on("load", function() {
             $('#carousel').flexslider({
@@ -355,7 +370,7 @@
         $(document).ready(function() {
             $(window).scroll(function(event) {
                 var pos_body = $('html,body').scrollTop();
-                if (pos_body > 100) {
+                if (pos_body > 50) {
                     $("#header").addClass('active');
                 } else {
                     $("#header").removeClass("active");
