@@ -1104,6 +1104,7 @@
       color: #666666;
       position: relative;
       cursor: pointer;
+      line-height: 35px;
   }
   
   .my-comment__check-for-save .check-to-save {
@@ -1210,7 +1211,7 @@
   
   @media screen and (max-width:1024px) {
       .intro .intro-content {
-          top: 30px;
+          top: 20px;
           padding: 0;
       }
       .feedback {
@@ -1491,7 +1492,7 @@
       }
       .intro .intro-content h6 {
           font-size: 10px;
-          margin-bottom: 10px;
+          margin-bottom: 5px;
       }
       .intro .intro-content h1 {
           font-size: 16px;
@@ -1537,5 +1538,266 @@
       }
       .certificate-container .thread-content {
           width: 100%;
+      }
+      .feedback {
+          margin-top: 50px;
+      }
+      .certificate-container .thread-content .slides li {
+          width: 245px !important;
+      }
+      .patient .button-group {
+          padding: 10px 10px 0px;
+      }
+      .patient .button-group label {
+          font-size: 13px;
+          width: 50%;
+          margin-bottom: 12px;
+      }
+      .patient-thread {
+          margin: 15px;
+      }
+      .patient-thread .product-item__content .product-item__thumbnail,
+      .patient-thread .product-item__content .product-item__intro {
+          width: 100%;
+          padding: 0;
+      }
+      .patient-thread .product-item__intro--rate .star {
+          font-size: 20px;
+      }
+      .blogs-page nav.blogs-page__navigation ul li {
+          padding: 0px 10px;
+          font-size: 14px;
+      }
+      .news-content__related-posts--slide .col {
+          margin: 5px;
+      }
+      .news-page .news-content {
+          width: 100%;
+      }
+      .news-content .news-content__share ul li {
+          display: block;
+          margin: 9px 70px;
+          font-size: 14px;
+      }
+      .news-content .news-content__share {
+          padding: 0px 0 7px;
+      }
+      .news-content__change-page h3 {
+          font-size: 12px;
+      }
+      .news-content__change-page {
+          padding: 20px 10px;
+      }
+      .news-content__change-page .prev-page i {
+          top: 23px;
+          font-size: 18px;
+          left: -25px;
+      }
+      .news-content__change-page .next-page i {
+          top: 23px;
+          font-size: 18px;
+          left: 160px;
+      }
+      .news-content__change-page .prev-page,
+      .news-content__change-page .next-page {
+          width: 50%;
+      }
+      .news-content__related-posts {
+          margin: 10px 0 20px;
+      }
+      .news-page .news-sidebar {
+          width: 100%;
+          margin-top: 60px;
+      }
+      .news-content__detail .news-content__detail--body .content-detail--left,
+      .news-content__detail .news-content__detail--body .content-detail--right {
+          width: 100%;
+      }
+      .news-content__detail .news-content__detail--table td {
+          padding: 6px;
+          font-size: 12px;
+      }
+      .feedback .feedback-header h1 {
+          font-size: 32px;
+          letter-spacing: 0px;
+      }
+      .news-page {
+          padding: 0px 0 50px;
+      }
+      .news-content__detail .news-content__detail--body {
+          display: initial;
+      }
+      .list-comment .comment-first__avatar {
+          width: 20%;
+      }
+      .list-comment .comment-first__intro .comment-first__intro--name time {
+          font-size: 14px;
+          display: block;
+          margin-left: 0;
+          margin-bottom: 10px;
+      }
+      .list-comment .comment-first__intro .comment-first__intro--name .name {
+          margin-bottom: 3px;
+      }
+      .list-comment .comment-first__intro .comment-first__intro--status p {
+          font-size: 14px;
+      }
+  }
+  
+  @media screen and (max-width: 375px) {
+      #header .header-logo {
+          padding: 0;
+      }
+      #header .header-phone {
+          padding: 0;
+          border: 0;
+          width: 120px;
+          margin-left: -15px;
+      }
+      .intro .intro-content {
+          width: 100%;
+          position: initial;
+          margin-left: 0;
+      }
+      .intro .intro-content h6 {
+          font-size: 16px;
+          margin-bottom: 15px;
+      }
+      .intro .intro-content h1 {
+          font-size: 27px;
+          margin-bottom: 20px;
+      }
+      .intro .intro-content p {
+          font-size: 16px;
+          margin-bottom: 20px;
+      }
+      .intro .intro-content .text-small {
+          font-size: 13px;
+          margin-bottom: 40px;
+      }
+      .intro .intro-content a {
+          font-size: 12px;
+          padding: 10px 30px;
+      }
+      .feedback .feedback-header h1 {
+          font-size: 29px;
+      }
+      .feedback-content {
+          padding: 0 20px;
+      }
+      .feedback .feedback-content .col--30 {
+          width: 100%;
+          margin: 20px 0;
+      }
+      .feedback .feedback-content .infor-customer h3 {
+          font-size: 20px;
+          margin-bottom: 6px;
+      }
+      .feedback .feedback-content .infor-customer h5 {
+          font-size: 14px;
+          margin-bottom: 6px;
+      }
+      .star {
+          font-size: 17px;
+      }
+      .feedback .feedback-content .col--30 .col-content p {
+          font-size: 18px;
+          line-height: 40px;
+      }
+      .feedback .feedback-content .col--30 .col-content {
+          padding: 0 40px;
+      }
+      .feedback .feedback-content .col-footer a {
+          font-size: 18px;
+      }
+      .patient-thread .product-item__content {
+          padding: 30px 15px;
+      }
+      .patient .button-group label {
+          font-size: 15px;
+          width: 33%;
+          margin-bottom: 0;
+      }
+      .patient-thread h3.title {
+          font-size: 24px;
+          margin-bottom: 0px;
+      }
+      .patient-thread .product-item__intro--icons a {
+          margin: 7px 7px;
+      }
+  }
+  
+  @media screen and (max-width: 320px) {
+      .patient .patient-title h1 {
+          font-size: 24px;
+      }
+      .patient .patient-title {
+          margin: 30px 0 20px;
+      }
+      .patient .button-group label {
+          font-size: 16px;
+          width: 100%;
+          margin-bottom: 10px;
+      }
+      .patient-thread h3.title {
+          font-size: 18px;
+      }
+      .patient-thread .product-item__intro--description h3 {
+          font-size: 16px;
+      }
+      .patient-thread .product-item__intro--description p {
+          font-size: 14px;
+      }
+      .patient-thread .product-item__intro--table b,
+      .patient-thread .product-item__intro--table span {
+          font-size: 12px;
+          padding: 5px 10px;
+      }
+      .patient-thread .product-item__intro--rate .star {
+          font-size: 14px;
+      }
+      .patient-thread .product-item__content .product-item__thumbnail .carousel {
+          margin-bottom: 22px;
+      }
+      .patient-thread .product-item__intro--icons {
+          padding: 0;
+      }
+      .news-content__related-posts--slide .col {
+          width: 100%;
+      }
+      .blogs-page .blogs-page__title h1 {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+      .blogs-page nav.blogs-page__navigation ul li {
+          padding: 0px 10px;
+          font-size: 12px;
+      }
+      .news-content__related-posts--slide .col h6 {
+          font-size: 14px;
+          margin: 7px 0;
+      }
+      .news-content__related-posts--slide .col h3 {
+          font-size: 16px;
+      }
+      .news-content__related-posts--slide .col time {
+          font-size: 14px;
+      }
+      .news-content__related-posts--slide .col {
+          margin: 20px 0;
+          box-shadow: 0px 0px 16px #e4e4e4;
+          padding: 15px;
+          box-sizing: border-box;
+      }
+      .news-content .news-content__title h1 {
+          font-size: 24px;
+          letter-spacing: 0.9px;
+          line-height: 30px;
+      }
+      .news-content .news-content__share ul li {
+          margin: 9px 50px;
+      }
+      .news-content__change-page .next-page i {
+          left: 115px;
       }
   }
